@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Library</h1>
+        <p id="warningTxt">xxxxx</p>
+        <form action="" autocomplete="off" id="book-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="title" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="author" placeholder="Author">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="isbn" placeholder="ISBN">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="pages" placeholder="Pages">
+            </div>
+            <div class="form-group label">
+                <label for="read">Read the book?</label><br />
+                <select name="read" id="read">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+        
+            <input type="submit" value="Add Book" class="btn">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Title</td>
+                        <td>Author</td>
+                        <td>ISBN</td>
+                        <td>Pages</td>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+            </table>
+        </form>
+    </div>
+    
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/jaredd-craig-HH4WBGNyltc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 2rem;   
+}
+
+#warningTxt {
+    font-size: 0.8rem;
+    background-color: rgb(220, 163, 163);
+    padding: 0.3rem;
+}
+
+.form-group input {
+    height: 2.5rem;
+    width: 30rem;
+    box-shadow: 0.6px 0.6px #ddd;
+    border: rgb(248, 243, 243)  solid 0.6px;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+.form-group label {
+    font-size: 1.4rem;
+    color: aliceblue;
+}
+
+select {
+    width: 100%;
+    padding: 0.7rem;
+    border: rgb(248, 243, 243)  solid 0.6px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: 0;
+}
+
+.label {
+    margin-top:1rem;
+}
+
+.btn {
+    width: 30rem;
+    box-shadow: 0.6px 0.6px #ddd;
+    border: rgb(248, 243, 243)  solid 0.6px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: darkred;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td{
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: aliceblue;
+}
