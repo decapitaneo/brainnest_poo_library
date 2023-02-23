@@ -69,8 +69,9 @@ select {
     font-weight: bolder;
     font-size: 1.8rem;
     color: darkred;
+    cursor: pointer;
 }
-
+/*
 table {
     margin-left:auto;
     margin-right:auto;
@@ -80,4 +81,18 @@ td{
     padding: 1rem;
     font-size: 1.4rem;
     color: aliceblue;
+}
+*/
+
+.lists .todo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: aliceblue;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.todo span {
+    cursor:pointer;
 }
