@@ -34,9 +34,14 @@ function addingBookToLibrary(){
         const book = new Book(bookId, title, author, isbn, pages, read);
         myLibrary.push(book);
         loadLibraryIntoDiv();
+        showAlert("Book registered with success!")
     }
-
 }
+
+//Localstorage -store the book locally
+
+
+
 
 function loadLibraryIntoDiv() {
     const libraryDiv = document.querySelector("[data-library]");
@@ -63,17 +68,20 @@ function changeBookReadStatus(bookId) {
     const bookIndex = myLibrary.findIndex((b) => b.id === bookId);
     myLibrary[bookIndex].read = myLibrary[bookIndex].read === "Yes" ? "No" : "Yes";
     loadLibraryIntoDiv();
+    showAlert("Status changed successfully!")
 }
 
 // When the delete button from a book is clicked, the book is deleted from the library
 function deleteBookFromLibrary(bookId) {
     myLibrary = myLibrary.filter((b) => b.id !== bookId);
     loadLibraryIntoDiv();
+    showAlert("Book deleted successfully!")
 }
 
 //alert message
 
-function showAlert(){
-    
 
+function showAlert(text){
+    let validationMessage = document.getElementById("message");
+    validationMessage.innerHTML = text;   
 }
