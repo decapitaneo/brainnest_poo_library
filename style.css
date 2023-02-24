@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
-.container{
+body {
+    width: 100%;
+}
+
+.back{
     width: 100%;
     height: 100vh;
-    background-image: url('./images/jaredd-craig-HH4WBGNyltc-unsplash.jpg');
+    background-image: url('./images/istockphoto-1354441996-170667a.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+}
+
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +25,14 @@
     padding: 2rem;
 }
 
+form {
+    margin: auto;
+    width: 40%;
+}
+
 h1{
-    color: aliceblue;
-    font-size: 2rem;   
+    font-size: 2rem;
+    color: darkred;
 }
 
 #warningTxt {
@@ -32,7 +43,7 @@ h1{
 
 .form-group input {
     height: 2.5rem;
-    width: 30rem;
+    width: 100%;
     box-shadow: 0.6px 0.6px #ddd;
     border: rgb(248, 243, 243)  solid 0.6px;
     border-radius: 5px;
@@ -42,8 +53,9 @@ h1{
 }
 
 .form-group label {
-    font-size: 1.4rem;
-    color: aliceblue;
+    font-size: 1.6rem;
+    color: darkred;
+    font-weight: bold;
 }
 
 select {
@@ -53,6 +65,9 @@ select {
     border-radius: 5px;
     font-size: 1rem;
     outline: 0;
+    color: #72736E;
+    font-weight: bold;
+   
 }
 
 .label {
@@ -60,7 +75,7 @@ select {
 }
 
 .btn {
-    width: 30rem;
+    width: 100%;
     box-shadow: 0.6px 0.6px #ddd;
     border: rgb(248, 243, 243)  solid 0.6px;
     border-radius: 5px;
@@ -70,17 +85,70 @@ select {
     font-size: 1.8rem;
     color: darkred;
     cursor: pointer;
+    font-weight: bold;
 }
 
-table {
-    margin-left:auto;
-    margin-right:auto;
+.table {
+    display: flex;
+    background-color:#ddd;
+    margin-top: 1rem;
 }
 
-td{
+.cabecalho {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: 1.6rem;
     padding: 1rem;
+    color: darkred;
+    font-weight: bold;
+}
+
+span {
+    width: 20%;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.book {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.book h2 {
     font-size: 1.4rem;
-    color: aliceblue;
+}
+
+
+.book button {
+    padding: 0.2rem;
+    box-shadow: 0.6px 0.6px #ddd;
+    border: rgb(248, 243, 243)  solid 0.6px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: darkred;
+    cursor: pointer;
+}
+
+.book .read {
+    margin-top: 0.5rem;
+}
+
+.book .delete {
+    margin-top: 0.5rem;
 }
 
 /*

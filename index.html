@@ -8,53 +8,55 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Library</h1>
-        <p id="warningTxt">xxxxx</p>
-        <form action="" autocomplete="off" id="book-form" data-form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="title" placeholder="Title">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="author" placeholder="Author">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="isbn" placeholder="ISBN">
-            </div>
-            <div class="form-group">
-                <input type="number" class="form-control" id="pages" placeholder="Pages">
-            </div>
-            <div class="form-group label">
-                <label for="read">Read the book?</label><br />
-                <select name="read" id="read">
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
-            </div>
-        
-            <input type="submit" value="Add Book" class="btn">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <td>Title</td>
-                        <td>Author</td>
-                        <td>ISBN</td>
-                        <td>Pages</td>
-                    </tr>
-                </thead>
-                <tbody id="book-list">
-                </tbody>
-            </table>
-            <!--
-            <div class="lists" data-lists>
-                <div class="todo">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat harum est possimus consectetur impedit dolorem ut sunt debitis, quo nemo incidunt, tempora praesentium maxime quam facilis mollitia adipisci animi vitae.</p>
-                    <span>deleteBtn</span>
+    <main class="back">
+        <div class="container">
+            <h1>Library</h1>
+            <div id="warningTxt">xxxxx</div>
+            <form action="" autocomplete="off" id="book-form" data-form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="title" placeholder="Title" data-title>
                 </div>
-            </div>
-            -->
-        </form>
-    </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="author" placeholder="Author" data-author>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="isbn" placeholder="ISBN" data-isbn>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="pages" placeholder="Pages" data-pages>
+                </div>
+                <div class="form-group label">
+                    <label for="read">Read the book?</label><br />
+                    <select name="read" id="read" data-read>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            
+                <input type="submit" value="Add Book" class="btn">
+                <div class="table" >
+                    <div class="cabecalho">
+                        <span>Title</span>
+                        <span>Author</span>
+                        <span>ISBN</span>
+                        <span>Pages</span>
+                        <span>Read</span>
+                    </div>
+                    <div class="test" data-library></div>
+                </div>
+                
+                <!--
+                <div class="lists" data-lists>
+                    <div class="todo">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat harum est possimus consectetur impedit dolorem ut sunt debitis, quo nemo incidunt, tempora praesentium maxime quam facilis mollitia adipisci animi vitae.</p>
+                        <span>deleteBtn</span>
+                    </div>
+                </div>
+                -->
+            </form>
+        </div>
+    </main>
+    
     
 <script src="./script.js"></script>
 </body>
