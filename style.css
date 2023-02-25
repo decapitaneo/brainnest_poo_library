@@ -145,7 +145,7 @@ select {
 }
 
 .book button {
-    width: 13%;
+    width: 14%;
 }
 
 span {
@@ -181,17 +181,3 @@ span {
     padding-bottom: 0.5rem;
 }
 
-/*
-.lists .todo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: aliceblue;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-}
-
-.todo span {
-    cursor:pointer;
-}
-*/
