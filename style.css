@@ -36,9 +36,12 @@ h1{
 }
 
 #warningTxt {
-    font-size: 0.8rem;
-    background-color: rgb(220, 163, 163);
-    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    color: darkred;
+    font-size: 1.2rem;
+    padding-top: 0.6rem;
+    font-weight: bold;
 }
 
 .form-group input {
@@ -56,6 +59,15 @@ h1{
     font-size: 1.6rem;
     color: darkred;
     font-weight: bold;
+}
+
+
+small {
+    display: flex;
+    justify-content: center;
+    color: darkred;
+    font-size: 1rem;
+    padding-top: 0.5;
 }
 
 select {

@@ -17,15 +17,19 @@
             <form action="" autocomplete="off" id="book-form" data-form>
                 <div class="form-group">
                     <input type="text" class="form-control" id="title" placeholder="Title" data-title>
+                    <small id="titleValidation" id="validacao"></small>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="author" placeholder="Author" data-author>
+                    <small id="authorValidation" id="validacao"></small>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="isbn" placeholder="ISBN" data-isbn>
+                    <small id="isbnValidation" id="validacao"></small>
                 </div>
                 <div class="form-group">
                     <input type="number" class="form-control" id="pages" placeholder="Pages" data-pages>
+                    <small id="pagesValidation" id="validacao"></small>
                 </div>
                 <div class="form-group label">
                     <label for="read">Read the book?</label><br />
@@ -43,18 +47,11 @@
                         <span>ISBN</span>
                         <span>Pages</span>
                         <span>Read</span>
+                        <span>Status</span>
+                        <span>Removal</span>
                     </div>
                     <div class="test" data-library></div>
                 </div>
-                
-                <!--
-                <div class="lists" data-lists>
-                    <div class="todo">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat harum est possimus consectetur impedit dolorem ut sunt debitis, quo nemo incidunt, tempora praesentium maxime quam facilis mollitia adipisci animi vitae.</p>
-                        <span>deleteBtn</span>
-                    </div>
-                </div>
-                -->
             </form>
         </div>
     </main>
