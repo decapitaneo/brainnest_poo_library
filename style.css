@@ -27,7 +27,7 @@ body {
 
 form {
     margin: auto;
-    width: 40%;
+    width: 100%;
 }
 
 h1{
@@ -101,44 +101,57 @@ select {
 }
 
 .table {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     background-color:#ddd;
     margin-top: 1rem;
 }
 
 .cabecalho {
-    height: 85%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-between;
     font-size: 1.6rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5REM;
     color: darkred;
     font-weight: bold;
+}
+
+.cabecalho span {
+    width: 15%;
+}
+
+.book {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.book h2 {
+    width: 15%;
+}
+
+.book p {
+    width: 15%;
+}
+
+.book button {
+    width: 13%;
 }
 
 span {
     width: 20%;
 }
 
-.test {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem;
-    justify-content: space-evenly;
-    font-size: 1.6rem;
-    margin-left: 1rem;
-}
-
-.book {
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-}
 
 .book h2 {
     font-size: 1.4rem;
@@ -146,9 +159,8 @@ span {
 
 
 .book button {
-    padding: 0.2rem;
-    box-shadow: 0.6px 0.6px #ddd;
-    border: rgb(248, 243, 243)  solid 0.6px;
+    box-shadow: 0.4px 0.4px #ddd;
+    border: darkred  solid 0.6px;
     border-radius: 5px;
     font-weight: bolder;
     color: darkred;
@@ -157,10 +169,16 @@ span {
 
 .book .read {
     margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .book .delete {
     margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 /*
